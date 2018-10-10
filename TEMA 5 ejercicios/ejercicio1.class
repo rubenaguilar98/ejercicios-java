@@ -1,0 +1,14 @@
+public class ejercicio3{
+  public static void main(String[] args){
+    
+    int= multiplos5 = 0
+    
+    do{
+      multiplos5 +=5;
+    }
+    }while (multiplos5 <= 100);
+      System.out.println(multiplos5);
+    }
+  }
+}
+      
