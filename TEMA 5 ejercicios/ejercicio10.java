@@ -1,23 +1,29 @@
 public class ejercicio10{
   public static void main(String[] args){
     
-    double n = 0;
-    double suma = 0;
-    int cantidad = 0;
+    double acumulador = 0;
+    double valor;
+    int conteo = 0;
+    double media;
     
-    System.out.println("Introduzca la nota de los examenes(Para terminar intoduzca un numero negativo)");
+    System.out.println("Introduce un valor(negativo para terminar)");
+    valor = Integer.parseInt(System.console().readLine());
   
-    while (n>=0){
-      n = Double.parseDouble(System.console().readLine());
-      suma += n;
-      cantidad++;
-    }
-    System.out.println("media :"+(suma-n)/(cantidad-1));
+    do{
+    acumulador += valor;
+    conteo++;
+    System.out.println("Introdduce un valor(negativo para terminar)");
+    valor = Integer.parseInt(System.console().readLine());
+    
       
+    }while(valor >= 0);
+    media = acumulador/conteo;
+    System.out.println("La media de las nota es : "+media);
     
   }
 }
     
+  
     
       
     

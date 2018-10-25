@@ -1,27 +1,22 @@
 public class ejercicio22{
-  public static void main(String[] args){ 
+  public static void main (String[] args){
     
-    boolean esPrimo=true;
+    System.out.println("Este programa muestra los numeros primos entre 2 y 100 ambos incluidos");
     
-    for(int n=2; n<=100; n++){
-    esPrimo = true;
+    boolean esPrimo;
     
-    for(int i= 2; i<n;i++){
-
+      for (int i =2;i<=100;i++){
+        esPrimo = true;
       
-      if(n%i ==0){
-        esPrimo=false;
-
-
+        for(int j=2;j<i;j++){
+        
+          if((i%j)==0){
+          esPrimo = false;
+          }
+        } 
+        if (esPrimo){
+        System.out.println(i);
+        }
       }
-    }
-      if(esPrimo){
-        System.out.print(n+" ");
-
-      }
-    }
   }
 }
-
-  
-    
